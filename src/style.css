@@ -1,3 +1,10 @@
 * {
   margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.conteiner {
+  margin-left: 81px;
+  margin-right: 87px;
 }
