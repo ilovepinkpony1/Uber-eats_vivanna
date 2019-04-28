@@ -8,3 +8,84 @@
   margin-left: 81px;
   margin-right: 87px;
 }
+/* footer styles below */
+
+.footer {
+  background: #262626;
+  padding-top: 56px;
+  padding-right: 87px;
+  padding-bottom: 40px;
+  padding-left: 81px;
+  width: 100%;
+}
+/* footer logo styles */
+
+.footer_logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.footer_letters {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+
+.footer_letters > li {
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* downloadicons */
+
+.footer_download img {
+  width: 100%;
+  height: auto;
+}
+
+.footer_download {
+  display: flex;
+}
+
+.footer_download_img1 {
+  width: 135px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_download_img2 {
+  width: 135px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
