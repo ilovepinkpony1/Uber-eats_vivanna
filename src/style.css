@@ -1,6 +1,12 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+
+}
+
+header {
+
   font-family: 'Roboto', sans-serif;
   color: #fff;
 }
@@ -119,7 +125,7 @@ display: flex;
 align-items: center;
 color: #1D1D1D;
 }
-=======
+
 
 
 
@@ -142,18 +148,59 @@ color: #1D1D1D;
 /* footer logo styles */
 
 .footer_logo {
+
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  height: 72px;
   align-items: center;
+
+  justify-content: space-around;
+  background: #fff;
+  box-shadow: 0 0 16px rgba(38,38,38,0.16);
+
   margin-bottom: 40px;
   padding-left: 1px;
+
 }
 
-.footer_letters {
-  list-style: none;
+
+header > div.logo > ul.logo_ul {
+  margin-top: 5px;
   display: flex;
-  padding-left: 0;
 }
+
+
+header > div.logo > ul.logo_ul > li {
+  list-style-type: none;
+  margin-right: 4px;
+}
+
+header > div.logo > ul.logo_ul > li.logo_li_R {
+  margin-right: 10px
+}
+
+header > div.logo > ul.logo_ul > li.logo_li_A {
+  margin-right: 3px
+}
+
+header > div.address_delivery {
+  display: flex;
+  align-items: center;
+}
+
+header > div.address_delivery > a.ASAP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+  height: 40px;
+  width: 65px;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+  text-decoration: none;
 
 .footer_letters > li {
   height: 15px;
@@ -235,13 +282,46 @@ hr {
 
 .footer_icons {
   margin-bottom: 59px;
+
 }
 
 
+header > div.address_delivery > label {
+  display: flex;
+  align-items: center;
+  width: 292px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+header > div.address_delivery > label > input {
+  border: 0px;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1D1D;
+}
+
+header > div.address_delivery > label::before {
+  content: url(svg_header/location.svg);
+  width: 12px;  
+  height: 15px;
+  margin: 0 12px 4px;
+}
 
 
-
-
+header > div.address_delivery > span {
+  margin: 0 9px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #626262;
+=======
 /* footerlist */
 
 .footer_list {
@@ -278,21 +358,44 @@ hr {
 .footer_download img {
   width: 100%;
   height: auto;
+
 }
 
-.footer_download {
+
+header > div.LogIn {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 40px;
 }
 
+
+header > div.LogIn > a.signIn,
+header > div.LogIn > a.register {
+=======
 .footer_download img {
   width: 135px;
   height: 40px;
+
   display: flex;
-  align-items: center;
   justify-content: center;
+
+  align-items: center;
+  padding: 0 12px;
+  height: 40px;
+  width: 80px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 24px;
+  color: #1D1D1D;
+  text-decoration: none;
+  border: 1px solid #E0E0E0;
+  border-radius: 2px;
+}
+
+header > div.LogIn > a.signIn {
+  margin-right: 16px;
+
   margin: 0 20px;
 }
 
@@ -307,5 +410,15 @@ hr {
   line-height: 13px;
   display: flex;
   width: 334px;
+
 }
 
+header > div.LogIn > a:hover {
+  color: #fff;
+  background-color: #262626;
+  transition: 0.5s ease;
+}
+
+header > div.LogIn > img {
+  margin-left: 27px;
+}
