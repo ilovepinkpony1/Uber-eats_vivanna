@@ -11,6 +11,116 @@
 }
 
 
+.mainSection {
+  margin: 50px 0 100px 0;
+}
+
+/*SEARCH*/
+#searchFild {
+  position: relative;
+  display: inline-block; 
+}
+#searchIcon {
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  left: 0;
+  width: 27px;
+  border: none;
+  margin: 0;
+}
+
+#search {
+  margin: 20px 0 15px 29px;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #626262;
+  opacity: 0.5;
+}
+
+hr {
+  width: 956px;
+  background: #757575;
+  border: none;
+  height: 1px;
+  opacity: 0.3;
+}
+
+#content { /*контейнер со всеми ресторанами*/
+  display: flex;
+  justify-content: space-between; 
+  flex-flow: wrap;
+  width: 100%;
+}
+
+.restaurant { /*бокс одного ресторана с картинкой*/
+  margin: 16px 0 16px 0;
+  width: 30%;
+  min-width: 308px;
+}
+
+img { /*картинка ресторана*/
+   width: 308px;
+ }
+
+.restInfo { /*бокс информации одного ресторана*/
+  padding: 13px 0 13px 0;
+  background-color: white;
+  margin: 0;
+}
+ 
+.restInfo:hover {
+  background-color: rgba(117, 117, 117, 0.04);
+}
+
+/*шрифты всех элементов*/
+
+#nameOfMain {
+  width: 163px;
+  height: 34px;
+  left: 81px;
+  top: 208px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #1D1D1D;
+}
+
+.restaurantName {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #1D1D1D;
+}
+
+.foodType {
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 25px;
+display: flex;
+align-items: center;
+color: #626262;
+}
+
+.time {
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 21px;
+display: flex;
+align-items: center;
+color: #1D1D1D;
+}
+=======
+
 
 
 
@@ -198,3 +308,4 @@ hr {
   display: flex;
   width: 334px;
 }
+
