@@ -14,6 +14,7 @@
 let currentBuys = 0;
 document.onclick = event => {
   const buys = document.getElementById('currentBuys');
+
   if (event.target.parentElement.className === 'restaurant') {
     currentBuys += 1;
     buys.style.display = 'flex';
@@ -24,10 +25,11 @@ document.onclick = event => {
 let scrollTimer;
 function up() {
   let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  
   if(top > 0) {
     window.scrollBy(0,-100);
     scrollTimer = setTimeout('up()',20);
-  } else clearTimeout(t);
+  } else clearTimeout(scrollTimer);
   return false;
 }
 
