@@ -14,7 +14,7 @@
 let currentBuys = 0;
 document.onclick = event => {
   const buys = document.getElementById('currentBuys');
-  
+
   if (
   event.target.className === 'restaurant' 
   || event.target.className === 'restImg' 
@@ -27,4 +27,18 @@ document.onclick = event => {
     buys.innerHTML = `${currentBuys}`;
   };
 }
-    
+
+let scrollTimer;
+function up() {
+  let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    scrollTimer = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+
+function changeColorOfDiv () {
+  let div = event.path[1];
+  div.style.backgroundColor = '	rgb(89, 189, 90, 0.5)';
+}

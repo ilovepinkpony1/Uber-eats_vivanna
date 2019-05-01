@@ -71,7 +71,7 @@
     Kyiv Restaurants
   </h1>
   <div id="content">
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-1.png" alt="food-image">
         <h3 class=restaurantName>
           Макдоналдс
@@ -81,7 +81,7 @@
           25 - 35 Min
         </p>
     </div> 
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-2.png" alt="food-image">
         <h3 class=restaurantName>
           WOKWEI
@@ -91,7 +91,7 @@
           40 - 50 Min
         </p>
     </div>
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-3.png" alt="food-image">
         <h3 class=restaurantName>
           YIZHA
@@ -101,7 +101,7 @@
           35 - 40 Min
         </p>
     </div>
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-4.png" alt="food-image">
         <h3 class=restaurantName>
           Musafir (вул. Саксаганського)
@@ -111,7 +111,7 @@
           30 - 40 Min
         </p>
     </div>
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-5.png" alt="food-image">
       <h3 class=restaurantName>
         WOKWEI
@@ -121,7 +121,7 @@
         40 - 50 Min
       </p>
     </div>
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-6.png" alt="food-image">
         <h3 class=restaurantName>
           Milk Bar
@@ -131,7 +131,7 @@
           35 - 40 Min
         </p>
     </div>
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-7.png" alt="food-image">
         <h3 class=restaurantName>
         Mimoza Brooklyn Pizza
@@ -141,7 +141,7 @@
         15 - 25 Min
         </p>
     </div> 
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-8.png" alt="food-image">
         <h3 class=restaurantName>
           To Be
@@ -151,7 +151,7 @@
           25 - 35 Min
         </p>
     </div>
-    <div class="restaurant">
+    <div class="restaurant" onclick="return changeColorOfDiv()">
       <img class="restImg" src="images\img-9.png" alt="food-image">
       <h3 class=restaurantName>
         Druzi Cafe (вул. Прорізна))
@@ -213,8 +213,12 @@
 </section>
 <hr class="footer_hr">
 <section class="footer_install_icons">
-  <a href="#"><img src="icons_footer/Group.png" alt="ios install" class="footer_ios"></a>
-  <a href="#"><img src="icons_footer/google-play.png" alt="google-play install" class="footer_andr"></a>
+  <a href="https://itunes.apple.com/us/app/uber-eats-food-delivery/id1058959277?mt=8">
+    <img src="icons_footer/Group.png" alt="ios install" class="footer_ios">
+  </a>
+  <a href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=ru">
+    <img src="icons_footer/google-play.png" alt="google-play install" class="footer_andr">
+  </a>
 </section>
 <hr class="footer_hr">
 <section class="footer_license">
@@ -230,6 +234,6 @@
 </section>
 </div>
 </footer>
-<a href="#" id="scrollUp"><img src="svg_footer/arrow.svg" alt="scroll-up"></a>
+<a href="#" id="scrollUp" onclick="return up()"><img src="svg_footer/arrow.svg" alt="scroll-up"></a>
 <script src="script.js"></script>
 </body>

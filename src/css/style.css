@@ -10,7 +10,7 @@
 #scrollUp {
   width: 80px;
   height: 80px;
-  background: #59BD5A;
+  background: #59bd5a;
   position: fixed;
   bottom: 24px;
   right: 16px;
@@ -31,8 +31,25 @@
   right: -6px;
   color: white;
   font-size: 13px;
+  font-weight: bold;
   display: none;
   align-content: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 6px #cc0000;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(33, 155, 59, 0.5);
 }

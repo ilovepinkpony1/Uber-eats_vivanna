@@ -71,6 +71,7 @@
   line-height: 24px;
   color: #626262;
   opacity: 0.5;
+  outline: none;
 }
     
 hr {
@@ -83,7 +84,7 @@ hr {
 .restaurant:hover {
   background-color: rgba(117, 117, 117, 0.04);
 }
-    
+
 /*fonts of all elements*/
     
 #nameOfMain {
