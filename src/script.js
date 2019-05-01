@@ -14,7 +14,6 @@
 let currentBuys = 0;
 document.onclick = event => {
   const buys = document.getElementById('currentBuys');
-  console.log(event.target.parentElement.className);
   if (event.target.parentElement.className === 'restaurant') {
     currentBuys += 1;
     buys.style.display = 'flex';
@@ -37,5 +36,4 @@ function changeColorOfDiv () {
   if (event.target.parentElement.className === 'restaurant') {
     div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
   }
-  console.log();
 }
