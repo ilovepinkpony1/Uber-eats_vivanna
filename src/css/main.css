@@ -49,7 +49,8 @@
 
 #searchFild {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
+  width: 100%;
 }
 
 #searchIcon {
@@ -63,7 +64,8 @@
 }
     
 #search {
-  margin: 20px 0 15px 29px;
+  margin: 20px 0 15px 0;
+  padding-left: 28px;
   border: none;
   font-style: normal;
   font-weight: normal;
@@ -72,6 +74,7 @@
   color: #626262;
   opacity: 0.5;
   outline: none;
+  width: 100%;
 }
     
 hr {

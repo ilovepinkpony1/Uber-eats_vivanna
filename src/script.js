@@ -14,14 +14,8 @@
 let currentBuys = 0;
 document.onclick = event => {
   const buys = document.getElementById('currentBuys');
-
-  if (
-  event.target.className === 'restaurant' 
-  || event.target.className === 'restImg' 
-  || event.target.className === 'restaurantName' 
-  || event.target.className === 'foodType' 
-  || event.target.className === 'time'
-  ) {
+  console.log(event.target.parentElement.className);
+  if (event.target.parentElement.className === 'restaurant') {
     currentBuys += 1;
     buys.style.display = 'flex';
     buys.innerHTML = `${currentBuys}`;
@@ -40,5 +34,8 @@ function up() {
 
 function changeColorOfDiv () {
   let div = event.path[1];
-  div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
+  if (div !== 'div#content') {
+    div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
+  }
+  console.log();
 }
