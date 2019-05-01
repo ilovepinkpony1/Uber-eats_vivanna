@@ -52,7 +52,6 @@ header > div.address_delivery > a.ASAP {
   text-decoration: none;
 }
 
-
 header > div.address_delivery > label {
   display: flex;
   align-items: center;
@@ -79,7 +78,7 @@ input::placeholder {
 }
 
 header > div.address_delivery > label::before {
-  content: url(svg_header/location.svg);
+  content: url(../svg_header/location.svg);
   width: 12px;  
   height: 15px;
   margin: 0 12px 4px;
@@ -92,7 +91,6 @@ header > div.address_delivery > span {
   font-weight: 300;
   color: #626262;
 }
-
 
 header > div.LogIn {
    display: flex;
@@ -132,42 +130,44 @@ header > div.LogIn > img {
 
 @media  (min-width: 640px) and (max-width: 1023px) {
 
- header {
-   justify-content: space-between;
- }
- header > div.logo {
-  margin-left: 8px;
-  margin-right: 8px;
- }
+  header {
+    justify-content: space-between;
+  }
 
- header > div.LogIn {
-   margin-right: 18px;
- }
+  header > div.logo {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  header > div.LogIn {
+    margin-right: 18px;
+  }
 
 
- a.ASAP {
-   width: 57px;
- }
- header > div.LogIn > a.signIn,
- header > div.LogIn > a.register {
-  margin-right: 3px;
-}
+  a.ASAP {
+    width: 57px;
+  }
 
-header > div.LogIn > img {
-  margin-left: 1px;
-}
+  header > div.LogIn > a.signIn,
+  header > div.LogIn > a.register {
+    margin-right: 3px;
+  }
 
-header > div.address_delivery {
-  margin-right: 10px;
-}
+  header > div.LogIn > img {
+    margin-left: 1px;
+  }
 
-header > div.address_delivery > label{
-  width: 200px;
-}
-header > div.address_delivery > span {
-  margin: 0 3px;
-}
+  header > div.address_delivery {
+    margin-right: 10px;
+  }
 
+  header > div.address_delivery > label{
+    width: 200px;
+  }
+
+  header > div.address_delivery > span {
+    margin: 0 3px;
+  }
 } 
 
 .LogIn {
@@ -178,13 +178,16 @@ header > div.address_delivery > span {
   header > div.address_delivery {
     display: none;
   }
+
   header > div.LogIn > img {
     display: none;
   }
+
   header > div.logo {
     margin-left: 8px;
     margin-right: 6px;
   }
+
   header > div.LogIn {
     margin-right: 4px;
   }
@@ -197,9 +200,11 @@ header > div.address_delivery > span {
   header > div.LogIn > a.register{
     margin: 0;
   }
+
   header > div.LogIn > a.signIn {
     margin-right: 6px;
   }
+
   #currentBuys {
     display: none;
   }

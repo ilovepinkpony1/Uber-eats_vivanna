@@ -3,6 +3,7 @@
  window.onscroll = () => {
   let scrolled = window.pageYOffset || document.documentElement.scrollTop;
   const button = document.getElementById('scrollUp');
+
   if (scrolled < 300) {
     button.style.display = 'none';
   } else {
@@ -10,11 +11,10 @@
   }
 }
 
-
 let currentBuys = 0;
-document.onclick = function(event){
+document.onclick = event => {
   const buys = document.getElementById('currentBuys');
-
+  
   if (
   event.target.className === 'restaurant' 
   || event.target.className === 'restImg' 
