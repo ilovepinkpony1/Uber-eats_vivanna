@@ -25,7 +25,7 @@ document.onclick = event => {
 let scrollTimer;
 function up() {
   let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-  
+
   if(top > 0) {
     window.scrollBy(0,-100);
     scrollTimer = setTimeout('up()',20);
@@ -36,6 +36,11 @@ function up() {
 function changeColorOfDiv () {
   let div = event.path[1];
   if (event.target.parentElement.className === 'restaurant') {
-    div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
+    if (div.style.backgroundColor !== 'rgba(117, 117, 117, 0.2)') {
+      div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
+    } else {
+      div.style.backgroundColor = '#fff';
+      currentBuys -= 2;
+    }
   }
 }
