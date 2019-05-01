@@ -14,6 +14,7 @@ header > div.logo {
 }
 
 header > div.logo > ul.logo_ul {
+  padding: 0;
   margin-top: 5px;
   display: flex;
 }
@@ -173,3 +174,33 @@ header > div.address_delivery > span {
   position: relative;
 }
   
+@media (max-width: 639px) {
+  header > div.address_delivery {
+    display: none;
+  }
+  header > div.LogIn > img {
+    display: none;
+  }
+  header > div.logo {
+    margin-left: 8px;
+    margin-right: 6px;
+  }
+  header > div.LogIn {
+    margin-right: 4px;
+  }
+  
+  header > div.LogIn > a.signIn,
+  header > div.LogIn > a.register {
+    width: 72px;
+  }
+
+  header > div.LogIn > a.register{
+    margin: 0;
+  }
+  header > div.LogIn > a.signIn {
+    margin-right: 6px;
+  }
+  #currentBuys {
+    display: none;
+  }
+}
