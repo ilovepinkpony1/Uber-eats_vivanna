@@ -40,5 +40,5 @@ function up() {
 
 function changeColorOfDiv () {
   let div = event.path[1];
-  div.style.backgroundColor = '	rgb(89, 189, 90, 0.5)';
+  div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
 }
