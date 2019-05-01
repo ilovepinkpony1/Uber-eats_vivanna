@@ -64,8 +64,8 @@
 }
     
 #search {
-  margin: 20px 0 15px 0;
-  padding-left: 28px;
+  margin-top: 20px;
+  padding: 0 0 15px 28px;
   border: none;
   font-style: normal;
   font-weight: normal;
