@@ -34,7 +34,7 @@ function up() {
 
 function changeColorOfDiv () {
   let div = event.path[1];
-  if (div !== 'div#content') {
+  if (event.target.parentElement.className === 'restaurant') {
     div.style.backgroundColor = 'rgba(117, 117, 117, 0.2)';
   }
   console.log();
